@@ -87,6 +87,7 @@ console.log(cumleKur("Hello", " World!"));
 var bircumle;
 
 bircumle = cumleKur("Ben", " iyi ", "bir ", "yazılımcı ", "olacağım!")
+console.log(bircumle);
 
 
 
@@ -123,9 +124,12 @@ function cumlelereDonustur(param1, ayrac){
 			6. Oluşturulan paragraf döndürülecek
 	*/
 	
-function paragrafOlustur(/* kodlar buraya */ ){
-	/* kodlar buraya */ 
+function paragrafOlustur(par1, cumkurfonk, cumdonfonk){
+	let cumledizi = (cumdonfonk(par1, " "));
+	return cumkurfonk(cumledizi[1], cumledizi[3], cumledizi[5], cumledizi[7], cumledizi[9]);
+
 }
+console.log(paragrafOlustur(cumleler, cumleKur, cumlelereDonustur));
 
 
 /* 	GÖREV 3:
