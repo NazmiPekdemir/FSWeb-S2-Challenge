@@ -106,8 +106,8 @@ console.log(bircumle);
 	*/
 	
 
-function cumlelereDonustur(param1, ayrac){
-	return param1.map(kelimeler => kelimeler.join(ayrac));
+function cumlelereDonustur(par1, ayrac){
+	return par1.map(kelimeler => kelimeler.join(ayrac));   
 	}
 
 	console.log(cumlelereDonustur(cumleler, " "))
@@ -137,17 +137,28 @@ console.log(paragrafOlustur(cumleler, cumleKur, cumlelereDonustur));
 			3a. meyveler dizisinin ilk ve son elemanlarını diziden çıkartın. (.pop ve .shift metodlarını kullanın)
  */
 //3a çözümü
-/* kodlar buraya */
 
+	// var sebzeler = ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
+	// var meyveler = ['🍇','🍈','🍉','🍊','🍋','🍌','🍍','🥭','🍎','🍐','🍑','🍒','🍓','🥝','🥥']
+
+	
+	meyveler.pop();
+	meyveler.shift();
+	console.log(meyveler);
 
 
 
 
  
-/* 			3b.  Bir tavşan ve bir kirpi arkadaşlar sebzeler dizimizin peşine düştü. Tavşan => 🐇 , Kirpi=> 🦔 , Tavşanla kirpi sebzeleri ele geçirmek için bir plan kurdular. Tavşan diziye önden saldıracak, kirpi ise arkalarından dolaşacak. Varsayalım ki arkadaşların planları başarılı oldu. Tavşanı dizinin ilk elemanına 🐇, Kirpiyi dizinin son elemanına ekleyin 🦔 
+/* 	3b.  Bir tavşan ve bir kirpi arkadaşlar sebzeler dizimizin peşine düştü. Tavşan => 🐇 , Kirpi=> 🦔 , Tavşanla kirpi sebzeleri ele geçirmek için bir plan kurdular. Tavşan diziye önden saldıracak, kirpi ise arkalarından dolaşacak. Varsayalım ki arkadaşların planları başarılı oldu. Tavşanı dizinin ilk elemanına 🐇, Kirpiyi dizinin son elemanına ekleyin 🦔 
 */
 //3b çözümü
-/* kodlar buraya */
+	// var sebzeler = ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
+	
+	sebzeler.unshift("🐇");
+	sebzeler.push("🦔");
+	
+	console.log(sebzeler);
 
 
 
@@ -155,14 +166,14 @@ console.log(paragrafOlustur(cumleler, cumleKur, cumlelereDonustur));
 
 
 
-
-/* 			3c. manav isminde bir dizi oluşturun.`meyveler` dizisi ilk elemanlara, `sebzeler` dizisi son elemanlara denk gelecek şekilde, iki diziyi birleştirip sonucu manav dizisine aktarın. (.concat metodu)
+/* 3c. manav isminde bir dizi oluşturun.`meyveler` dizisi ilk elemanlara, `sebzeler` dizisi son elemanlara denk gelecek şekilde, iki diziyi birleştirip sonucu manav dizisine aktarın. (.concat metodu)
 	*/
 	//3c çözümü
-/* kodlar buraya */
+
 
 var manav;
-
+manav = meyveler.concat(sebzeler);
+console.log(manav);
 
 
 
