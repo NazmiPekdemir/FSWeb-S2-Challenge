@@ -188,10 +188,16 @@ console.log(manav);
 			4. elde edilen string döndürülecek
  */
 
-function emojileriDonustur(/* kodlar buraya */){
-/* kodlar buraya */
-
+function emojileriDonustur(mesaj,newobj){
+ 	for(let key in newobj){
+		let emoji = newobj[key];
+		mesaj = mesaj.replaceAll(key.toLowerCase(), emoji);
+		mesaj = mesaj.replaceAll(key.toUpperCase(), emoji);
+	}
+	return mesaj;
 }
+
+console.log(emojileriDonustur("Bu gün çok mutluyum :d. Ödevi erken bitirdim :D. Şimdilik Workintech ailesinden ayrılmak zorundayım :O. Bu üzücü bir durum kendim için :(. Ama tekrar gelmeyi düşünüyorum :). Sevgilerimle <3 !!!!", emojiler));
 
 
 
